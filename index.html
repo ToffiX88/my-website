@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My WebSite</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="mechs.js"></script>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    123
+    <div class="account">
+        <div class="logCont">
+            <form action="" class="loginForm">
+                <h1>Login</h1>
+                <p>Username: <input type="text" name="username"></p>
+                <p>Password: <input type="password" name="password"></p>
+                <button type="submit">Login</button>
+                <p>Already Have an Account?<a class="regLink" href="" onclick="showRegCont()">Register</a></p>
+            </form>
+        </div>
+
+        <div class="regContNone">
+            <form action="" class="regForm">
+                <h1>Registration</h1>
+                <p class="regP">First Name: <input type="text" name="fName"></p>
+                <p class="regP">Last Name: <input type="text" name="lName"></p>
+                <p class="regP">Username: <input type="text" name="username"></p>
+                <p class="regP">Email: <input type="email" name="email"></p>
+                <p class="regP">Password: <input type="password" name="password"></p>
+                <button type="submit">Register</button>
+                <p>Already Have an Account?<a class="logLink" href="" onclick="showLogForm()">Login</a></p>
+            </form>
+
+        </div>
+
+    </div>
 </body>
 </html>
